@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify- play your favourite music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist">
+            <h1>Your favourite Album</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="artist">Alan Walker</span>
+                    <span class="songPlay"><span class="timestamp">3:32 </span><i class="far songItemPlay fa-play-circle" id="0"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="2">
+                    <span class="songName">Sanam Teri Kasam</span>
+                    <span class="artist">Ankit Tiwari</span>
+                    <span class="songPlay"><span class="timestamp">5:11</span><i class="far songItemPlay fa-play-circle" id="1"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="3">
+                    <span class="songName">Deo</span>
+                    <span class="artist">Luis Foncy</span>
+                    <span class="songPlay"><span class="timestamp">3:00 </span><i class="far songItemPlay fa-play-circle" id="2"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="4">
+                    <span class="songName">Tr</span>
+                    <span class="artist">Darshan Raval</span>
+                    <span class="songPlay"><span class="timestamp">3:28 </span><i class="far songItemPlay fa-play-circle" id="3"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="5">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="artist">Alan Walker</span>
+                    <span class="songPlay"><span class="timestamp">3:26 </span><i class="far songItemPlay fa-play-circle" id="4"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="6">
+                    <span class="songName">Pal</span>
+                    <span class="artist">Arijit Singh</span>
+                    <span class="songPlay"><span class="timestamp">4:07 </span><i class="far songItemPlay fa-play-circle" id="5"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="7">
+                    <span class="songName">Tujhe kitna Chahne Lage</span>
+                    <span class="artist">Arijit Singh</span>
+                    <span class="songPlay"><span class="timestamp">4:44 </span><i class="far songItemPlay fa-play-circle" id="6"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="8">
+                    <span class="songName">Pehli Dafa</span>
+                    <span class="artist">Atif Aslam</span>
+                    <span class="songPlay"><span class="timestamp">4:58 </span><i class="far songItemPlay fa-play-circle" id="7"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="9">
+                    <span class="songName">Wajah Tum Ho</span>
+                    <span class="artist">Armaan Malik</span>
+                    <span class="songPlay"><span class="timestamp">5:57 </span><i class="far songItemPlay fa-play-circle" id="8"></i></span>
+                </div>
+                <div class="songItem">
+                    <img  alt="10">
+                    <span class="songName">Zaalima</span>
+                    <span class="artist">Arijit Singh</span>
+                    <span class="songPlay"><span class="timestamp">4:59 </span><i class="far songItemPlay fa-play-circle" id="9"></i></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="progressbar" id="myprogressbar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+            <!-- <i class="fas fa-random" id="repeat"></i> -->
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" alt="1" width="34px" id="gif">
+            <span id="mastersong">Now playing</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>

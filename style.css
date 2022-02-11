@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', 'sans-serif';
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 14px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 75vh;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width : 70vw;
+    padding: 6px;
+    border-radius: 10px;
+    background-image: url('bg.jpg');
+    background-size: contain;
+}
+
+.songlist{
+    padding: 30px;
+}
+.songItemContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.songItem{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    border-radius: 26px;
+    min-width: 120%;
+}
+.songItem img{
+    height: 40px;
+    width: 40px;
+    margin: 6px;
+    border-radius: 20px;
+}
+.songPlay{
+    margin: 0 10px;
+}
+.timestamp{
+    margin-right: 4px;
+}
+.bottom{
+    position: sticky;
+    bottom: 0px;
+    background-color: black;
+    height: 12vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#myprogressbar{
+    width: 70vw;
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+.icons{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 15vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+}
+#mastersong{
+    font-family: 'Varela Round', 'sans-serif';
+    margin: 0 3px;
+    font-style: italic;
+}
